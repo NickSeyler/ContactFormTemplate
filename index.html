@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!-- Custom Stylesheets -->
     <link rel="stylesheet" href="/css/site.css"/>
 </head>
 
@@ -18,7 +19,7 @@
     <div class="container">
         <h1>Contact Form Template</h1>
         <div class="p-3 border border-2 rounded shadow-lg bg-light" id="formContainingDiv">
-            <form name="contactForm" class="row p-2">
+            <form name="contactForm" class="row p-2" netlify>
                 <div class="col-12">
                     <div class="row gy-3">
                         <!--Row One on a Desktop-->
@@ -57,6 +58,32 @@
                             <textarea type="text" class="form-control" name="message" rows="4"
                                 placeholder="Write your message here" required></textarea>
                         </div>
+
+                        <!--Row Four on Desktop-->
+                        <div class="col-12 form-group">
+                            <label class="form-label">How did you hear about us?</label>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel1" class="form-check-label">Family</label>
+                                <input type="radio" value="family" class="form-check-input" name="inputFunnel"/>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel2" class="form-check-label">Our Website</label>
+                                <input type="radio" value="web" class="form-check-input" name="inputFunnel"/>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel3" class="form-check-label">Newspaper</label>
+                                <input type="radio" value="newspaper" class="form-check-input" name="inputFunnel" />
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel4" class="form-check-label">Radio</label>
+                                <input type="radio" value="radio" class="form-check-input" name="inputFunnel" />
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label for="inputFunnel5" class="form-check-label">Televison</label>
+                                <input type="radio" value="tv" class="form-check-input" name="inputFunnel" />
+                            </div>
+                        </div>
+
                         <div class="col-12 d-flex justify-content-center pt-2">
                             <button type="submit" class="btn btn-outline-success btn-lg ">Submit</button>
                         </div>
